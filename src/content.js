@@ -110,7 +110,7 @@ export const bridal = {
   eyebrow: 'Sposa',
   title: ['Il giorno', 'del sì,', 'senza pensieri'],
   text: 'Il trucco e i capelli della sposa sono un dettaglio che ti accompagna in ogni foto. Per questo costruiamo il look insieme, passo dopo passo, perché tu possa solo goderti il momento.',
-  image: p('media/sposa.jpg'),
+  image: p('media/sposa-giorno.png'),
   steps: [
     {
       title: 'Consulenza',
