@@ -1,0 +1,169 @@
+// Tutti i testi, i contatti e le immagini del sito sono qui.
+// Modifica solo questo file per aggiornare il contenuto.
+
+// Prefisso del percorso base (serve per GitHub Pages, dove il sito sta in /nome-repo/)
+const p = (path) => import.meta.env.BASE_URL + path
+
+export const site = {
+  name: 'Lary',
+  brand: 'Lary Makeup & Hair',
+  role: 'Makeup & Hair Artist',
+  city: 'Verona',
+  fullName: 'Larisa Sarkisova',
+  languages: 'Italiano · English · Русский',
+  area: 'Verona, Venezia, Lago di Garda, Milano e Lago di Como',
+  description:
+    'Makeup & Hair Artist a Verona, Venezia, Lago di Garda e Milano: trucco e acconciature per spose, eventi e shooting.',
+  url: 'https://www.example.com', // <- sostituisci con il tuo dominio
+  vat: 'P.IVA 00000000000', // <- sostituisci con la tua P.IVA
+}
+
+export const contacts = {
+  // Numero WhatsApp senza + e senza spazi, es. 393331234567
+  whatsapp: '39XXXXXXXXXX',
+  whatsappMessage: 'Ciao Lary, vorrei prenotare una consulenza.',
+  email: 'info@example.com', // <- sostituisci
+  instagram: 'https://www.instagram.com/larybeautyit',
+  instagramHandle: '@larybeautyit',
+}
+
+export const nav = [
+  { label: 'Servizi', href: '#servizi' },
+  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Sposa', href: '#sposa' },
+  { label: 'Chi sono', href: '#chi-sono' },
+  { label: 'Contatti', href: '#contatti' },
+]
+
+export const media = {
+  background: p('media/background.png'),
+  heroVideo: p('media/hero.mp4'),
+  heroImage: p('media/hero.jpg'),
+  about: p('media/about.jpg'),
+  bridal: p('media/sposa.jpg'),
+}
+
+export const hero = {
+  eyebrow: 'Makeup & Hair Artist · Verona · Venezia · Lago di Garda',
+  title: ['Il tuo momento,', 'firmato', 'da mani esperte.'], // la 2ª parola è in corsivo
+  primaryCta: 'Prenota una consulenza',
+  secondaryCta: 'Guarda il portfolio',
+  card: {
+    title: 'Bellezza su misura',
+    text: 'Ogni viso è unico: ascolto, studio e creo il look che ti somiglia davvero.',
+  },
+  stats: [
+    { value: 500, suffix: '+', label: 'spose' },
+    { value: 10, suffix: '', label: 'anni di esperienza' },
+  ],
+}
+
+export const services = {
+  eyebrow: 'Servizi',
+  title: ['Un look per ogni', 'occasione'],
+  items: [
+    {
+      title: 'Trucco sposa',
+      text: 'Un make-up luminoso e a lunga tenuta, dalla cerimonia all’ultimo ballo.',
+      price: 'da € __',
+      image: p('media/sposa.jpg'),
+    },
+    {
+      title: 'Acconciature sposa ed eventi',
+      text: 'Raccolti, onde morbide e pieghe studiate in armonia con abito e viso.',
+      price: 'da € __',
+      image: p('media/eventi.jpg'),
+    },
+    {
+      title: 'Trucco per shooting e video',
+      text: 'Look pensati per la camera: editoriali, campagne, book e riprese.',
+      price: 'da € __',
+      image: p('media/shooting.jpg'),
+    },
+    {
+      title: 'Corsi di self make-up',
+      text: 'Impara a valorizzarti da sola, con prodotti e tecniche su misura per te.',
+      price: 'da € __',
+      image: p('media/corsi.jpg'),
+    },
+  ],
+}
+
+export const portfolio = {
+  eyebrow: 'Portfolio',
+  title: ['I miei', 'lavori'],
+  filters: ['Tutti', 'Sposa', 'Eventi', 'Editorial'],
+  items: [
+    { src: p('media/portfolio-01.jpg'), category: 'Sposa', alt: 'Sposa con trucco luminoso e acconciatura raccolta', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-02.jpg'), category: 'Eventi', alt: 'Trucco occhi per serata di gala', h: 'aspect-square' },
+    { src: p('media/portfolio-03.jpg'), category: 'Editorial', alt: 'Look editoriale con labbra intense', h: 'aspect-[4/5]' },
+    { src: p('media/portfolio-04.jpg'), category: 'Sposa', alt: 'Sposa con onde morbide e velo', h: 'aspect-[3/5]' },
+    { src: p('media/portfolio-05.jpg'), category: 'Sposa', alt: 'Dettaglio del trucco sposa naturale', h: 'aspect-square' },
+    { src: p('media/portfolio-06.jpg'), category: 'Eventi', alt: 'Acconciatura elegante per cerimonia', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-07.jpg'), category: 'Editorial', alt: 'Beauty shooting con pelle luminosa', h: 'aspect-[4/5]' },
+    { src: p('media/portfolio-08.jpg'), category: 'Sposa', alt: 'Sposa durante la preparazione', h: 'aspect-square' },
+    { src: p('media/portfolio-09.jpg'), category: 'Eventi', alt: 'Ospite di nozze con make-up elegante', h: 'aspect-[3/4]' },
+  ],
+}
+
+export const bridal = {
+  eyebrow: 'Sposa',
+  title: ['Il giorno', 'del sì,', 'senza pensieri'],
+  text: 'Il trucco e i capelli della sposa sono un dettaglio che ti accompagna in ogni foto. Per questo costruiamo il look insieme, passo dopo passo, perché tu possa solo goderti il momento.',
+  image: p('media/sposa.jpg'),
+  steps: [
+    {
+      title: 'Consulenza',
+      text: 'Ci conosciamo, parliamo di te, dell’abito, della location e dello stile che sogni.',
+    },
+    {
+      title: 'Prova trucco e capelli',
+      text: 'Proviamo il look nel dettaglio e lo perfezioniamo finché ti senti davvero tu.',
+    },
+    {
+      title: 'Il giorno del sì',
+      text: 'Ti raggiungo a domicilio o in location, con tutto il necessario per ritocchi e puntualità.',
+    },
+  ],
+  cta: 'Parliamo del tuo matrimonio',
+}
+
+export const about = {
+  eyebrow: 'Chi sono',
+  title: ['Ciao, sono', 'Lary'],
+  image: p('media/about.jpg'),
+  paragraphs: [
+    'Sono Larisa, per tutti Lary: Makeup & Hair Artist. Parlo italiano, inglese e russo, così spose e clienti da tutto il mondo si sentono subito a casa. Lavoro a Verona, Venezia, sul Lago di Garda, a Milano e sul Lago di Como.',
+    'Credo in una bellezza che sussurra, non che urla: valorizzare ciò che già hai, con eleganza e naturalezza.',
+    'Prima di ogni appuntamento ti ascolto, perché un buon look nasce dal capire come vuoi sentirti. [SOSTITUISCI CON LA TUA STORIA E LA TUA FORMAZIONE]',
+  ],
+  points: [
+    { title: 'Prodotti professionali cruelty-free', text: 'Selezionati per qualità, resa e rispetto della pelle.' },
+    { title: 'Igiene certificata', text: 'Strumenti sanificati e attenzione massima per ogni cliente.' },
+    { title: 'Trucco a lunga tenuta', text: 'Tecniche e prodotti pensati per durare tutta la giornata.' },
+  ],
+}
+
+export const reviews = {
+  eyebrow: 'Recensioni',
+  title: ['Parlano', 'di me'],
+  items: [
+    { name: '[NOME CLIENTE]', text: '[RECENSIONE DA INSERIRE]', stars: 5 },
+    { name: '[NOME CLIENTE]', text: '[RECENSIONE DA INSERIRE]', stars: 5 },
+    { name: '[NOME CLIENTE]', text: '[RECENSIONE DA INSERIRE]', stars: 5 },
+    { name: '[NOME CLIENTE]', text: '[RECENSIONE DA INSERIRE]', stars: 5 },
+  ],
+}
+
+export const contact = {
+  eyebrow: 'Contatti',
+  title: ['Prenota la tua', 'consulenza'],
+  text: 'Raccontami la tua data e le tue idee: ti rispondo con una proposta su misura.',
+  serviceOptions: ['Trucco sposa', 'Acconciature sposa ed eventi', 'Trucco per shooting e video', 'Corsi di self make-up'],
+  whatsappCta: 'Scrivimi su WhatsApp',
+}
+
+export const footer = {
+  privacy: p('privacy.html'),
+  cookie: p('cookie.html'),
+}
