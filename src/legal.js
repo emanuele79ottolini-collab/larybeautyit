@@ -55,7 +55,7 @@ export const pages = {
         p: ['I dati non sono diffusi. Possono essere conosciuti, nei limiti necessari, da:'],
         ul: [
           `il fornitore di hosting del sito (${legal.hosting}), che agisce come responsabile del trattamento per i soli dati di navigazione;`,
-          'Meta Platforms Ireland Limited, se scegli di usare WhatsApp, di aprire il profilo Instagram o di caricare il video Instagram incorporato: in tal caso trattano i dati come titolari autonomi secondo le proprie informative;',
+          'Meta Platforms Ireland Limited, se scegli di usare WhatsApp, di aprire il profilo Instagram o di caricare i video Instagram incorporati: in tal caso trattano i dati come titolari autonomi secondo le proprie informative;',
           'il fornitore del servizio email (ad esempio Google), se scegli di scrivere via email;',
           'professionisti e consulenti incaricati di adempimenti di legge (ad esempio commercialista), solo se il servizio viene prestato.',
         ],
@@ -63,7 +63,7 @@ export const pages = {
       {
         h: '6. Trasferimenti fuori dallo Spazio Economico Europeo',
         p: [
-          'Il sito non trasferisce direttamente dati fuori dall’UE e non carica risorse da servizi esterni durante la navigazione, salvo il video di Instagram solo se premi “Carica il video” (i caratteri tipografici sono ospitati sul sito stesso). Se usi WhatsApp, Instagram, il video incorporato o l’email, i rispettivi fornitori possono trasferire dati extra-UE adottando le garanzie previste dal GDPR (ad esempio decisioni di adeguatezza o clausole contrattuali standard), come descritto nelle loro informative.',
+          'Il sito non trasferisce direttamente dati fuori dall’UE e non carica risorse da servizi esterni durante la navigazione, salvo i video di Instagram solo se premi “Carica il video” (i caratteri tipografici sono ospitati sul sito stesso). Se usi WhatsApp, Instagram, i video incorporati o l’email, i rispettivi fornitori possono trasferire dati extra-UE adottando le garanzie previste dal GDPR (ad esempio decisioni di adeguatezza o clausole contrattuali standard), come descritto nelle loro informative.',
         ],
       },
       {
@@ -88,7 +88,7 @@ export const pages = {
       },
       {
         h: '10. Link a siti di terzi',
-        p: ['Il sito contiene collegamenti a servizi esterni (Instagram, WhatsApp e Matrimonio.com) e, su tua richiesta, un video incorporato da Instagram. Quando li apri lasci questo sito o ne attivi il contenuto: per il trattamento dei dati si applicano le informative dei rispettivi gestori.'],
+        p: ['Il sito contiene collegamenti a servizi esterni (Instagram, WhatsApp e Matrimonio.com) e, su tua richiesta, video incorporati da Instagram. Quando li apri lasci questo sito o ne attivi il contenuto: per il trattamento dei dati si applicano le informative dei rispettivi gestori.'],
       },
       {
         h: '11. Modifiche e collegamenti con le altre informative',
@@ -107,14 +107,14 @@ export const pages = {
       },
       {
         h: '2. Cosa usa questo sito',
-        p: ['Questo sito non installa cookie sul tuo dispositivo e non usa altri strumenti di tracciamento (ad esempio local storage, pixel o fingerprinting). Per questo motivo non mostra un banner cookie: l’unico contenuto di terze parti (un video di Instagram) si attiva solo se lo chiedi tu con un clic esplicito, come spiegato al punto 4.'],
+        p: ['Questo sito non installa cookie sul tuo dispositivo e non usa altri strumenti di tracciamento (ad esempio local storage, pixel o fingerprinting). Per questo motivo non mostra un banner cookie: gli unici contenuti di terze parti (due video di Instagram) si attivano solo se lo chiedi tu con un clic esplicito, come spiegato al punto 4.'],
         table: {
           head: ['Categoria', 'Usata dal sito', 'Note'],
           rows: [
             ['Cookie tecnici / necessari', 'No', 'Il sito funziona senza salvare cookie.'],
             ['Cookie analitici', 'No', 'Nessuno strumento di statistica o analisi del traffico.'],
             ['Cookie di marketing e profilazione', 'No', 'Nessuna pubblicità né remarketing.'],
-            ['Cookie di terze parti', 'Solo su tua richiesta', 'Solo se premi “Carica il video” (Instagram). Prima del tuo clic nessun servizio esterno viene caricato.'],
+            ['Cookie di terze parti', 'Solo su tua richiesta', 'Solo se premi “Carica il video” (video Instagram). Prima del tuo clic nessun servizio esterno viene caricato.'],
           ],
         },
       },
@@ -125,7 +125,7 @@ export const pages = {
       {
         h: '4. Collegamenti a servizi di terzi',
         p: ['Il sito contiene link a Instagram e WhatsApp (Meta) e al profilo su Matrimonio.com. Solo se li apri, quei servizi possono usare cookie o strumenti simili secondo le proprie regole.',
-          'Video Instagram incorporato: nella scheda “Trucco per shooting e video” puoi guardare un video senza lasciare il sito. Il video è ospitato da Instagram (Meta) e viene caricato solo dopo che premi “Carica il video”: da quel momento Instagram può impostare cookie e raccogliere dati secondo le proprie informative. Se non lo carichi, nessun dato viene inviato a Instagram.',
+          'Video Instagram incorporati: nella scheda “Trucco per shooting e video” e nella sezione “Il giorno del sì” puoi guardare dei video senza lasciare il sito. I video sono ospitati da Instagram (Meta) e vengono caricati solo dopo che premi “Carica il video”: da quel momento Instagram può impostare cookie e raccogliere dati secondo le proprie informative. Se non li carichi, nessun dato viene inviato a Instagram.',
           'Per i dettagli consulta le informative dei gestori:'],
         links: [
           { label: 'Instagram – informativa sui dati e sui cookie', href: 'https://privacycenter.instagram.com/policy/' },

@@ -141,6 +141,13 @@ export const bridal = {
     },
   ],
   cta: 'Parliamo del tuo matrimonio',
+  // Video Instagram: si carica solo dopo il clic dell'utente (nessun contenuto esterno prima)
+  video: {
+    label: 'Guarda il video',
+    title: 'Il giorno del sì',
+    page: 'https://www.instagram.com/reel/Dbxh4trMdTE/',
+    embed: 'https://www.instagram.com/reel/Dbxh4trMdTE/embed',
+  },
 }
 
 export const about = {
