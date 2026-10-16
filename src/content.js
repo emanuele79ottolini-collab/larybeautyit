@@ -88,6 +88,8 @@ export const services = {
         title: 'Trucco per shooting e video',
         page: 'https://www.instagram.com/reel/DZNW1scsY-R/',
         embed: 'https://www.instagram.com/reel/DZNW1scsY-R/embed',
+        // Per riprodurlo direttamente dal sito (senza Instagram) aggiungi il file MP4 in public/media
+        // e decommenta la riga: file: p('media/video-shooting.mp4'),
       },
     },
     {
@@ -147,6 +149,8 @@ export const bridal = {
     title: 'Il giorno del sì',
     page: 'https://www.instagram.com/reel/Dbxh4trMdTE/',
     embed: 'https://www.instagram.com/reel/Dbxh4trMdTE/embed',
+    // Per riprodurlo direttamente dal sito (senza Instagram) aggiungi il file MP4 in public/media
+    // e decommenta la riga: file: p('media/video-sposa.mp4'),
   },
 }
 

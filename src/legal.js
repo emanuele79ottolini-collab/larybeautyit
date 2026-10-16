@@ -63,7 +63,7 @@ export const pages = {
       {
         h: '6. Trasferimenti fuori dallo Spazio Economico Europeo',
         p: [
-          'Il sito non trasferisce direttamente dati fuori dall’UE e non carica risorse da servizi esterni durante la navigazione, salvo i video di Instagram solo se premi “Carica il video” (i caratteri tipografici sono ospitati sul sito stesso). Se usi WhatsApp, Instagram, i video incorporati o l’email, i rispettivi fornitori possono trasferire dati extra-UE adottando le garanzie previste dal GDPR (ad esempio decisioni di adeguatezza o clausole contrattuali standard), come descritto nelle loro informative.',
+          'Il sito non trasferisce direttamente dati fuori dall’UE e non carica risorse da servizi esterni durante la navigazione, salvo i video di Instagram solo se premi il relativo pulsante di riproduzione (i caratteri tipografici sono ospitati sul sito stesso). Se usi WhatsApp, Instagram, i video incorporati o l’email, i rispettivi fornitori possono trasferire dati extra-UE adottando le garanzie previste dal GDPR (ad esempio decisioni di adeguatezza o clausole contrattuali standard), come descritto nelle loro informative.',
         ],
       },
       {
@@ -114,7 +114,7 @@ export const pages = {
             ['Cookie tecnici / necessari', 'No', 'Il sito funziona senza salvare cookie.'],
             ['Cookie analitici', 'No', 'Nessuno strumento di statistica o analisi del traffico.'],
             ['Cookie di marketing e profilazione', 'No', 'Nessuna pubblicità né remarketing.'],
-            ['Cookie di terze parti', 'Solo su tua richiesta', 'Solo se premi “Carica il video” (video Instagram). Prima del tuo clic nessun servizio esterno viene caricato.'],
+            ['Cookie di terze parti', 'Solo su tua richiesta', 'Solo se premi il pulsante di riproduzione dei video Instagram. Prima del tuo clic nessun servizio esterno viene caricato.'],
           ],
         },
       },
@@ -125,7 +125,7 @@ export const pages = {
       {
         h: '4. Collegamenti a servizi di terzi',
         p: ['Il sito contiene link a Instagram e WhatsApp (Meta) e al profilo su Matrimonio.com. Solo se li apri, quei servizi possono usare cookie o strumenti simili secondo le proprie regole.',
-          'Video Instagram incorporati: nella scheda “Trucco per shooting e video” e nella sezione “Il giorno del sì” puoi guardare dei video senza lasciare il sito. I video sono ospitati da Instagram (Meta) e vengono caricati solo dopo che premi “Carica il video”: da quel momento Instagram può impostare cookie e raccogliere dati secondo le proprie informative. Se non li carichi, nessun dato viene inviato a Instagram.',
+          'Video Instagram incorporati: nella scheda “Trucco per shooting e video” e nella sezione “Il giorno del sì” puoi guardare dei video senza lasciare il sito. I video sono ospitati da Instagram (Meta) e vengono caricati solo dopo che premi il pulsante di riproduzione, accanto al quale è indicato che il video proviene da Instagram: da quel momento Instagram può impostare cookie e raccogliere dati secondo le proprie informative. Se non li avvii, nessun dato viene inviato a Instagram.',
           'Per i dettagli consulta le informative dei gestori:'],
         links: [
           { label: 'Instagram – informativa sui dati e sui cookie', href: 'https://privacycenter.instagram.com/policy/' },

@@ -66,6 +66,9 @@ export default function Bridal() {
               </button>
             )}
           </Reveal>
+          {bridal.video && !bridal.video.file && (
+            <p className="mt-3 text-xs text-cream/45">Il video si apre nel player di Instagram (Meta).</p>
+          )}
         </div>
       </div>
       <VideoModal video={video} onClose={closeVideo} />
