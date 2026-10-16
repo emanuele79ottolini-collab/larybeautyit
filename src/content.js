@@ -85,6 +85,13 @@ export const services = {
       text: 'Look pensati per la camera: editoriali, campagne, book e riprese.',
       price: 'da € __',
       image: p('media/shooting.jpg'),
+      // Video Instagram: si carica solo dopo il clic dell'utente (nessun contenuto esterno prima)
+      video: {
+        label: 'Guarda il video',
+        title: 'Trucco per shooting e video',
+        page: 'https://www.instagram.com/reel/DZNW1scsY-R/',
+        embed: 'https://www.instagram.com/reel/DZNW1scsY-R/embed',
+      },
     },
     {
       title: 'Corsi di self make-up',
