@@ -139,9 +139,9 @@ export const about = {
   title: ['Ciao, sono', 'Lary'],
   image: p('media/about.jpg'),
   paragraphs: [
-    'Sono Larisa, per tutti Lary: Makeup & Hair Artist. Parlo italiano, inglese e russo, così spose e clienti da tutto il mondo si sentono subito a casa. Lavoro a Verona, Venezia, sul Lago di Garda, a Milano e sul Lago di Como.',
-    'Credo in una bellezza che sussurra, non che urla: valorizzare ciò che già hai, con eleganza e naturalezza.',
-    'Prima di ogni appuntamento ti ascolto, perché un buon look nasce dal capire come vuoi sentirti. [SOSTITUISCI CON LA TUA STORIA E LA TUA FORMAZIONE]',
+    'Sono Larisa, per tutti Lary: Makeup Artist e Hair Stylist con una passione speciale per le spose. Il mio desiderio è semplice: farti sentire bellissima e, soprattutto, te stessa, dal primo sguardo allo specchio fino all’ultimo ballo.',
+    'Il mio stile è elegante, luminoso e naturale: non copro i tuoi tratti, li esalto. Creo un trucco che resiste alle emozioni, agli abbracci e a una giornata intera di fotografie, e resto accanto a te anche durante il servizio fotografico per ogni ritocco. Posso occuparmi anche di mamma, testimoni e damigelle, fino a 5 persone nello stesso giorno.',
+    'Prima del grande giorno ci conosciamo con una consulenza e costruiamo insieme il look, così non ci sono sorprese. Poi ti raggiungo dove preferisci, a casa o in location. Parlo italiano, inglese e russo e lavoro a Verona, Venezia, sul Lago di Garda, a Milano e sul Lago di Como.',
   ],
   points: [
     { title: 'Prodotti professionali cruelty-free', text: 'Selezionati per qualità, resa e rispetto della pelle.' },
