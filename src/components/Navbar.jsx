@@ -1,16 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { contacts, nav, site } from '../content'
-
-function InstagramIcon({ className = 'h-5 w-5' }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
-    </svg>
-  )
-}
+import { nav, site } from '../content'
+import ContactIcons from './ContactIcons'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -43,15 +34,7 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href={contacts.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-cream/40 bg-ink/50 text-cream backdrop-blur-md transition hover:border-rose hover:text-rose"
-          >
-            <InstagramIcon />
-          </a>
+          <ContactIcons only={['wa', 'ig']} className="hidden sm:flex" />
           <a href="#contatti" className="btn btn-solid hidden !py-2.5 md:inline-flex">Prenota</a>
           <button
             className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
@@ -83,6 +66,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a href="#contatti" onClick={() => setOpen(false)} className="btn btn-solid mt-4">Prenota</a>
+              <ContactIcons size="md" className="mt-5 justify-center" />
             </div>
           </motion.nav>
         )}

@@ -1,5 +1,9 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { contacts, media, site } from './content'
+import { pages } from './legal'
+import LegalPage from './components/LegalPage'
+import { WhatsAppIcon } from './components/ContactIcons'
+import { waLink } from './lib/contact'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -34,8 +38,24 @@ function useStructuredData() {
   }, [])
 }
 
+// Le pagine legali usano indirizzi con hash (#/privacy, #/cookie, ...): funzionano su qualsiasi hosting statico
+const getRoute = () => (window.location.hash.startsWith('#/') ? window.location.hash.slice(2) : '')
+
+function useRoute() {
+  const [route, setRoute] = useState(getRoute)
+  useEffect(() => {
+    const onChange = () => setRoute(getRoute())
+    window.addEventListener('hashchange', onChange)
+    return () => window.removeEventListener('hashchange', onChange)
+  }, [])
+  return route
+}
+
 export default function App() {
   useStructuredData()
+  const route = useRoute()
+  const legalPage = pages[route] ? route : null
+
   return (
     <>
       {/* Sfondo fisso sfuocato: sostituisci public/media/background.png per cambiarlo */}
@@ -48,18 +68,40 @@ export default function App() {
         />
       </div>
       {/* sfumatura da sinistra: la foto si dissolve nel fondo e la pagina resta leggibile */}
-      <div aria-hidden="true" className="fixed inset-0 -z-10 bg-gradient-to-r from-ink/80 via-ink/50 to-transparent md:from-ink/60 md:via-transparent md:to-transparent" />
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <Portfolio />
-        <Bridal />
-        <About />
-        <Reviews />
-        <Contact />
-      </main>
-      <Footer />
+      <div
+        aria-hidden="true"
+        className={`fixed inset-0 -z-10 ${
+          legalPage
+            ? 'bg-ink/90' // pagine legali: sfondo più scuro per la massima leggibilità
+            : 'bg-gradient-to-r from-ink/80 via-ink/50 to-transparent md:from-ink/60 md:via-transparent md:to-transparent'
+        }`}
+      />
+      {legalPage ? (
+        <LegalPage slug={legalPage} />
+      ) : (
+        <>
+          <Navbar />
+          <main>
+            <Hero />
+            <Services />
+            <Portfolio />
+            <Bridal />
+            <About />
+            <Reviews />
+            <Contact />
+          </main>
+          <Footer />
+          <a
+            href={waLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Scrivici su WhatsApp"
+            className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-rose text-ink shadow-lg shadow-ink/40 transition hover:scale-105 hover:bg-cream"
+          >
+            <WhatsAppIcon className="h-7 w-7" />
+          </a>
+        </>
+      )}
     </>
   )
 }

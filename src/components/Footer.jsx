@@ -1,20 +1,22 @@
-import { contacts, footer, site } from '../content'
+import { legal, legalLinks, site } from '../content'
+import ContactIcons from './ContactIcons'
 
 export default function Footer() {
   return (
     <footer className="border-t border-cream/10 bg-ink/85 px-5 py-10 md:px-8">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 text-sm text-cream/60 md:flex-row">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 text-sm text-cream/60 md:flex-row md:justify-between">
         <div className="text-center md:text-left">
           <p className="font-serif text-xl text-cream">{site.brand}</p>
-          <p>{site.vat}</p>
+          <p>{legal.owner} · {legal.ownerRole}</p>
         </div>
-        <nav className="flex flex-wrap justify-center gap-6" aria-label="Link legali e social">
-          <a href={contacts.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-rose">Instagram</a>
-          <a href={footer.privacy} className="hover:text-rose">Privacy Policy</a>
-          <a href={footer.cookie} className="hover:text-rose">Cookie Policy</a>
+        <ContactIcons />
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2" aria-label="Informazioni legali">
+          {legalLinks.map((l) => (
+            <a key={l.slug} href={`#/${l.slug}`} className="hover:text-rose">{l.label}</a>
+          ))}
         </nav>
-        <p>© {new Date().getFullYear()} {site.brand}</p>
       </div>
+      <p className="mt-6 text-center text-xs text-cream/40">© {new Date().getFullYear()} {site.brand}. Tutti i diritti riservati.</p>
     </footer>
   )
 }

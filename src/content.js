@@ -15,14 +15,24 @@ export const site = {
   description:
     'Makeup & Hair Artist a Verona, Venezia, Lago di Garda e Milano: trucco e acconciature per spose, eventi e shooting.',
   url: 'https://www.example.com', // <- sostituisci con il tuo dominio
-  vat: 'P.IVA 00000000000', // <- sostituisci con la tua P.IVA
+}
+
+// Titolare del trattamento e dati usati nelle pagine legali (un solo punto da aggiornare)
+export const legal = {
+  owner: 'Larisa Sarkisova',
+  ownerRole: 'Makeup & Hair Artist',
+  address: '', // facoltativo: indirizzo/sede del Titolare. Se compilato, compare nelle pagine legali
+  hosting: 'Hostinger', // fornitore di hosting del sito
+  updated: '16 ottobre 2026', // data di ultimo aggiornamento delle pagine legali
 }
 
 export const contacts = {
-  // Numero WhatsApp senza + e senza spazi, es. 393331234567
-  whatsapp: '39XXXXXXXXXX',
+  // Il numero NON viene mai mostrato in chiaro: è usato solo nei link all'icona WhatsApp.
+  // Formato senza + e senza spazi (39 = Italia).
+  whatsapp: '393203388027',
   whatsappMessage: 'Ciao Lary, vorrei prenotare una consulenza.',
-  email: 'info@example.com', // <- sostituisci
+  // L'indirizzo email è usato solo nel link dell'icona email.
+  email: 'Larisa.sarkisov@gmail.com',
   instagram: 'https://www.instagram.com/larybeautyit',
   instagramHandle: '@larybeautyit',
 }
@@ -163,7 +173,10 @@ export const contact = {
   whatsappCta: 'Scrivimi su WhatsApp',
 }
 
-export const footer = {
-  privacy: p('privacy.html'),
-  cookie: p('cookie.html'),
-}
+// Pagine legali: stesso elenco in footer, form e pagine (i testi sono in src/legal.js)
+export const legalLinks = [
+  { slug: 'privacy', label: 'Privacy Policy' },
+  { slug: 'cookie', label: 'Cookie Policy' },
+  { slug: 'termini', label: 'Termini e Condizioni' },
+  { slug: 'disclaimer', label: 'Disclaimer' },
+]

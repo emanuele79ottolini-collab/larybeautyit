@@ -25,13 +25,16 @@ Metti i tuoi file nella cartella `public/media/` con questi nomi esatti. Finché
 
 ## Cambiare testi e contatti
 
-Modifica solo `src/content.js`: nome, città, numero WhatsApp (senza `+` né spazi, es. `393331234567`), email, Instagram, servizi e prezzi ("da € __"), recensioni, P.IVA.
+Modifica solo `src/content.js`: nome, città, contatti, servizi e prezzi ("da € __"), recensioni e dati del Titolare.
+
+- **Contatti:** `contacts.whatsapp` (senza `+` né spazi) ed `contacts.email`. Il numero e l'email **non compaiono mai come testo** nel sito: sono usati solo dai link delle icone WhatsApp ed email.
+- **Pagine legali:** Privacy Policy, Cookie Policy, Termini e Condizioni e Disclaimer sono in `src/legal.js` e si aprono su `#/privacy`, `#/cookie`, `#/termini`, `#/disclaimer`. Titolare, indirizzo (facoltativo), hosting e data di aggiornamento si cambiano in `legal` dentro `src/content.js`.
+- **Importante:** le pagine legali descrivono solo ciò che il sito fa oggi (nessun cookie, nessuna newsletter, nessuna statistica, font ospitati sul sito). Se aggiungi analytics, newsletter, Trustpilot, mappe, video incorporati o altri servizi esterni, **vanno aggiornate** insieme a un eventuale banner cookie. Fai rivedere i testi da un professionista prima della pubblicazione definitiva.
 
 Da sostituire prima di pubblicare:
-- numero WhatsApp (`39XXXXXXXXXX`), email, dominio (`site.url`) e P.IVA;
+- dominio (`site.url`);
 - recensioni segnaposto `[RECENSIONE DA INSERIRE]`: usa solo recensioni reali;
-- testo "Chi sono" e prezzi;
-- `public/privacy.html` e `public/cookie.html` (pagine segnaposto).
+- testo "Chi sono" e prezzi.
 
 ## Pubblicazione
 
