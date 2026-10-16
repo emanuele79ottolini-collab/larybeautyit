@@ -119,6 +119,8 @@ export const portfolio = {
     { src: p('media/portfolio-sposa-07.jpg'), category: 'Sposa', alt: 'Chignon intrecciato per una cerimonia in giardino', h: 'aspect-[4/3]' },
     { src: p('media/portfolio-07.jpg'), category: 'Editorial', alt: 'Beauty shooting con pelle luminosa', h: 'aspect-[4/5]' },
     { src: p('media/portfolio-sposa-08.jpg'), category: 'Sposa', alt: 'Trucco con pennello per un abito da cerimonia a fiori blu', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-09.jpg'), category: 'Sposa', alt: 'Profilo con onde morbide, pelle luminosa e trucco occhi nei toni caldi', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-10.jpg'), category: 'Sposa', alt: 'Ritratto con occhi illuminati e labbra nude, trucco elegante', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-09.jpg'), category: 'Eventi', alt: 'Ospite di nozze con make-up elegante', h: 'aspect-[3/4]' },
   ],
 }
