@@ -62,10 +62,6 @@ export const hero = {
     title: 'Bellezza su misura',
     text: 'Ogni viso è unico: ascolto, studio e creo il look che ti somiglia davvero.',
   },
-  stats: [
-    { value: 500, suffix: '+', label: 'spose' },
-    { value: 10, suffix: '', label: 'anni di esperienza' },
-  ],
 }
 
 export const services = {

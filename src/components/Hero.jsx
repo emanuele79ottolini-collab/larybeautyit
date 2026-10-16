@@ -1,21 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
-import { motion, useScroll, useTransform, useReducedMotion, useInView, animate } from 'framer-motion'
+import { useRef, useState } from 'react'
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
 import { hero, media } from '../content'
-
-function CountUp({ to, suffix = '' }) {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true })
-  const reduce = useReducedMotion()
-  const [n, setN] = useState(reduce ? to : 0)
-
-  useEffect(() => {
-    if (!inView || reduce) return
-    const c = animate(0, to, { duration: 2, ease: 'easeOut', onUpdate: (v) => setN(Math.round(v)) })
-    return () => c.stop()
-  }, [inView, to, reduce])
-
-  return <span ref={ref}>{n}{suffix}</span>
-}
 
 const item = (i) => ({
   initial: { opacity: 0, y: 30 },
@@ -66,14 +51,6 @@ export default function Hero() {
           <motion.div {...motionProps(3)} className="glass max-w-sm p-6 md:order-1">
             <h3 className="text-2xl">{hero.card.title}</h3>
             <p className="mt-2 text-sm text-cream/75">{hero.card.text}</p>
-          </motion.div>
-          <motion.div {...motionProps(4)} className="grid grid-cols-2 gap-4 md:order-2 md:flex">
-            {hero.stats.map((s) => (
-              <div key={s.label} className="glass p-5 text-center md:min-w-[10rem] md:p-6">
-                <div className="font-serif text-4xl text-rose md:text-5xl"><CountUp to={s.value} suffix={s.suffix} /></div>
-                <div className="mt-1 text-xs uppercase tracking-widest text-cream/70">{s.label}</div>
-              </div>
-            ))}
           </motion.div>
         </div>
       </div>
