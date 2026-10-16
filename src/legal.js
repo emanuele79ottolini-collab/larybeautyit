@@ -88,7 +88,7 @@ export const pages = {
       },
       {
         h: '10. Link a siti di terzi',
-        p: ['Il sito contiene collegamenti a servizi esterni (Instagram e WhatsApp). Quando li apri lasci questo sito: per il trattamento dei dati si applicano le informative dei rispettivi gestori.'],
+        p: ['Il sito contiene collegamenti a servizi esterni (Instagram, WhatsApp e Matrimonio.com). Quando li apri lasci questo sito: per il trattamento dei dati si applicano le informative dei rispettivi gestori.'],
       },
       {
         h: '11. Modifiche e collegamenti con le altre informative',
@@ -124,7 +124,7 @@ export const pages = {
       },
       {
         h: '4. Collegamenti a servizi di terzi',
-        p: ['Il sito contiene link a Instagram e WhatsApp (Meta). Solo se li apri, quei servizi possono usare cookie o strumenti simili secondo le proprie regole. Per i dettagli consulta le loro informative:'],
+        p: ['Il sito contiene link a Instagram e WhatsApp (Meta) e al profilo su Matrimonio.com. Solo se li apri, quei servizi possono usare cookie o strumenti simili secondo le proprie regole. Per i dettagli consulta le loro informative:'],
         links: [
           { label: 'Instagram – informativa sui dati e sui cookie', href: 'https://privacycenter.instagram.com/policy/' },
           { label: 'WhatsApp – informativa sulla privacy', href: 'https://www.whatsapp.com/legal/privacy-policy-eea' },
@@ -182,7 +182,7 @@ export const pages = {
       },
       {
         h: '6. Link a siti di terzi',
-        p: ['Il sito rimanda a servizi esterni (ad esempio Instagram e WhatsApp). Il Titolare non controlla quei servizi e non risponde dei loro contenuti o delle loro condizioni d’uso.'],
+        p: ['Il sito rimanda a servizi esterni (ad esempio Instagram, WhatsApp e Matrimonio.com). Il Titolare non controlla quei servizi e non risponde dei loro contenuti o delle loro condizioni d’uso.'],
       },
       {
         h: '7. Responsabilità',
@@ -228,7 +228,7 @@ export const pages = {
       },
       {
         h: '5. Recensioni e contenuti di terzi',
-        p: ['Eventuali recensioni riportate esprimono le opinioni dei rispettivi autori e sono pubblicate con il loro consenso. Il Titolare non risponde dei contenuti dei siti e dei social a cui il sito rimanda.'],
+        p: ['La valutazione e le recensioni citate (anche tramite link a Matrimonio.com) esprimono le opinioni dei rispettivi autori e sono gestite dalla piattaforma che le ospita; la valutazione riportata sul sito può non essere aggiornata in tempo reale. Il Titolare non risponde dei contenuti dei siti e dei social a cui il sito rimanda.'],
       },
       {
         h: '6. Disponibilità del sito',

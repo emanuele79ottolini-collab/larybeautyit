@@ -157,12 +157,18 @@ export const about = {
 export const reviews = {
   eyebrow: 'Recensioni',
   title: ['Parlano', 'di me'],
-  items: [
-    { name: '[NOME CLIENTE]', text: '[RECENSIONE DA INSERIRE]', stars: 5 },
-    { name: '[NOME CLIENTE]', text: '[RECENSIONE DA INSERIRE]', stars: 5 },
-    { name: '[NOME CLIENTE]', text: '[RECENSIONE DA INSERIRE]', stars: 5 },
-    { name: '[NOME CLIENTE]', text: '[RECENSIONE DA INSERIRE]', stars: 5 },
-  ],
+  // Valutazione riassuntiva presa dal profilo su Matrimonio.com (aggiornare se cambia)
+  source: {
+    name: 'Matrimonio.com',
+    url: 'https://www.matrimonio.com/trucco-sposa/larisa-sarkisova--e435203',
+    rating: '5,0',
+    count: 7,
+    checkedOn: '16 ottobre 2026',
+  },
+  text: 'Le recensioni sono scritte da spose reali e pubblicate sul mio profilo di Matrimonio.com.',
+  // Per mostrare anche il carosello, aggiungi qui recensioni con il consenso di chi le ha scritte:
+  // { name: 'Nome', text: 'Testo della recensione', stars: 5 }
+  items: [],
 }
 
 export const contact = {
