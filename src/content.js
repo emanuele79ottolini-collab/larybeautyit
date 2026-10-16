@@ -115,7 +115,7 @@ export const portfolio = {
 export const bridal = {
   eyebrow: 'Sposa',
   title: ['Il giorno', 'del sì,', 'senza pensieri'],
-  text: 'Il trucco e i capelli della sposa sono un dettaglio che ti accompagna in ogni foto. Per questo costruiamo il look insieme, passo dopo passo, perché tu possa solo goderti il momento.',
+  text: 'Il trucco e i capelli della sposa ti accompagnano in ogni foto. Per questo costruiamo il look insieme, passo dopo passo, con attenzione ai dettagli e ascolto: un risultato personalizzato che ti faccia sentire davvero te stessa, così potrai solo goderti il momento.',
   image: p('media/sposa-giorno.png'),
   steps: [
     {
@@ -139,9 +139,9 @@ export const about = {
   title: ['Ciao, sono', 'Lary'],
   image: p('media/about.jpg'),
   paragraphs: [
-    'Sono Larisa, per tutti Lary: Makeup Artist e Hair Stylist con una passione speciale per le spose. Il mio desiderio è semplice: farti sentire bellissima e, soprattutto, te stessa, dal primo sguardo allo specchio fino all’ultimo ballo.',
-    'Il mio stile è elegante, luminoso e naturale: non copro i tuoi tratti, li esalto. Creo un trucco che resiste alle emozioni, agli abbracci e a una giornata intera di fotografie, e resto accanto a te anche durante il servizio fotografico per ogni ritocco. Posso occuparmi anche di mamma, testimoni e damigelle, fino a 5 persone nello stesso giorno.',
-    'Prima del grande giorno ci conosciamo con una consulenza e costruiamo insieme il look, così non ci sono sorprese. Poi ti raggiungo dove preferisci, a casa o in location. Parlo italiano, inglese e russo e lavoro a Verona, Venezia, sul Lago di Garda, a Milano e sul Lago di Como.',
+    'Sono Larisa, per tutti Lary: Make-up Artist e Hair Stylist professionale, con una passione sincera per il mio lavoro. Mi prendo cura del tuo look nel giorno più importante della tua vita, con esperienza e sensibilità estetica.',
+    'Creo un look completamente personalizzato, pensato per valorizzare la tua bellezza naturale con eleganza e armonia: luminoso, raffinato, mai artefatto. Il trucco resiste alle emozioni, agli abbracci e a una giornata intera di fotografie, e resto accanto a te anche durante il servizio fotografico per ogni ritocco. Posso occuparmi anche di mamma, testimoni e damigelle, fino a 5 persone nello stesso giorno.',
+    'Scegliermi significa scegliere attenzione ai dettagli, ascolto e un risultato capace di farti sentire davvero te stessa. Ti raggiungo dove preferisci, a casa o in location. Parlo italiano, inglese e russo e lavoro a Verona, Venezia, sul Lago di Garda, a Milano e sul Lago di Como.',
   ],
   points: [
     { title: 'Prodotti professionali cruelty-free', text: 'Selezionati per qualità, resa e rispetto della pelle.' },
@@ -170,7 +170,7 @@ export const reviews = {
 export const contact = {
   eyebrow: 'Contatti',
   title: ['Prenota la tua', 'consulenza'],
-  text: 'Raccontami la tua data e le tue idee: ti rispondo con una proposta su misura.',
+  text: 'Contattami senza impegno: avrai tutto il tempo per capire se sono la professionista giusta per te. Raccontami la tua data e le tue idee e ti rispondo con una proposta su misura.',
   serviceOptions: ['Trucco sposa', 'Acconciature sposa ed eventi', 'Trucco per shooting e video', 'Corsi di self make-up'],
   whatsappCta: 'Scrivimi su WhatsApp',
 }
