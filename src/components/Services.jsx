@@ -47,7 +47,6 @@ export default function Services() {
                       ▶ {s.video.label}
                     </button>
                   )}
-                  <p className="mt-auto pt-5 font-serif text-lg italic text-rose">{s.price}</p>
                 </div>
               </article>
             </Reveal>

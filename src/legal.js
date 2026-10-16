@@ -165,9 +165,9 @@ export const pages = {
         ],
       },
       {
-        h: '3. Prezzi, acconti e disdette',
+        h: '3. Preventivi, acconti e disdette',
         p: [
-          'I prezzi indicati sul sito, dove presenti (“da €”), sono orientativi. Il prezzo definitivo, l’eventuale acconto e le condizioni di modifica o disdetta sono comunicati nel preventivo o nella conferma e accettati da entrambe le parti prima della prestazione.',
+          'Il sito non riporta prezzi. Il costo del servizio, l’eventuale acconto e le condizioni di modifica o disdetta sono comunicati nel preventivo o nella conferma e accettati da entrambe le parti prima della prestazione.',
         ],
       },
       {
@@ -225,8 +225,8 @@ export const pages = {
         ],
       },
       {
-        h: '4. Prezzi, disponibilità e informazioni',
-        p: ['Prezzi, date e disponibilità possono cambiare e vanno confermati direttamente con il Titolare. Il Titolare si impegna a mantenere accurate le informazioni, senza garantirne l’assenza di errori o omissioni.'],
+        h: '4. Disponibilità e informazioni',
+        p: ['Date e disponibilità possono cambiare e vanno confermate direttamente con il Titolare, che comunica anche i costi con un preventivo personalizzato. Il Titolare si impegna a mantenere accurate le informazioni, senza garantirne l’assenza di errori o omissioni.'],
       },
       {
         h: '5. Recensioni e contenuti di terzi',

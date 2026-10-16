@@ -71,19 +71,16 @@ export const services = {
     {
       title: 'Trucco sposa',
       text: 'Un make-up luminoso e a lunga tenuta, dalla cerimonia all’ultimo ballo.',
-      price: 'da € __',
       image: p('media/sposa.jpg'),
     },
     {
       title: 'Acconciature sposa ed eventi',
       text: 'Raccolti, onde morbide e pieghe studiate in armonia con abito e viso.',
-      price: 'da € __',
       image: p('media/eventi.jpg'),
     },
     {
       title: 'Trucco per shooting e video',
       text: 'Look pensati per la camera: editoriali, campagne, book e riprese.',
-      price: 'da € __',
       image: p('media/shooting.jpg'),
       // Video Instagram: si carica solo dopo il clic dell'utente (nessun contenuto esterno prima)
       video: {
@@ -96,7 +93,6 @@ export const services = {
     {
       title: 'Corsi di self make-up',
       text: 'Impara a valorizzarti da sola, con prodotti e tecniche su misura per te.',
-      price: 'da € __',
       image: p('media/corsi.jpg'),
     },
   ],

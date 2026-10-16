@@ -25,7 +25,7 @@ Metti i tuoi file nella cartella `public/media/` con questi nomi esatti. Finché
 
 ## Cambiare testi e contatti
 
-Modifica solo `src/content.js`: nome, città, contatti, servizi e prezzi ("da € __"), recensioni e dati del Titolare.
+Modifica solo `src/content.js`: nome, città, contatti, servizi, recensioni e dati del Titolare.
 
 - **Contatti:** `contacts.whatsapp` (senza `+` né spazi) ed `contacts.email`. Il numero e l'email **non compaiono mai come testo** nel sito: sono usati solo dai link delle icone WhatsApp ed email.
 - **Pagine legali:** Privacy Policy, Cookie Policy, Termini e Condizioni e Disclaimer sono in `src/legal.js` e si aprono su `#/privacy`, `#/cookie`, `#/termini`, `#/disclaimer`. Titolare, indirizzo (facoltativo), hosting e data di aggiornamento si cambiano in `legal` dentro `src/content.js`.
@@ -34,7 +34,9 @@ Modifica solo `src/content.js`: nome, città, contatti, servizi e prezzi ("da �
 Da sostituire prima di pubblicare:
 - dominio (`site.url`);
 - recensioni segnaposto `[RECENSIONE DA INSERIRE]`: usa solo recensioni reali;
-- testo "Chi sono" e prezzi.
+- testo "Chi sono".
+
+I prezzi non sono mostrati sul sito: i costi si comunicano con un preventivo personalizzato.
 
 ## Pubblicazione
 
