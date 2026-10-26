@@ -88,15 +88,6 @@ export const services = {
       title: 'Trucco per shooting e video',
       text: 'Look pensati per la camera: editoriali, campagne, book e riprese.',
       image: p('media/shooting.jpg'),
-      // Video Instagram: si carica solo dopo il clic dell'utente (nessun contenuto esterno prima)
-      video: {
-        label: 'Guarda il video',
-        title: 'Trucco per shooting e video',
-        page: 'https://www.instagram.com/reel/DZNW1scsY-R/',
-        embed: 'https://www.instagram.com/reel/DZNW1scsY-R/embed',
-        // Per riprodurlo direttamente dal sito (senza Instagram) aggiungi il file MP4 in public/media
-        // e decommenta la riga: file: p('media/video-shooting.mp4'),
-      },
     },
     {
       title: 'Corsi di self make-up',
@@ -109,18 +100,16 @@ export const services = {
 export const portfolio = {
   eyebrow: 'Portfolio',
   title: ['I miei', 'lavori'],
-  filters: ['Tutti', 'Sposa', 'Eventi', 'Editorial'],
+  filters: ['Tutti', 'Sposa', 'Editorial'], // aggiungere 'Eventi' quando ci sono le foto
   items: [
     { src: p('media/portfolio-sposa-01.jpg'), category: 'Sposa', alt: 'Sposa sorridente sul lago con trucco luminoso e chignon morbido', h: 'aspect-[2/3]' },
     { src: p('media/portfolio-sposa-02.jpg'), category: 'Sposa', alt: 'Sposa sul lago con abito in tulle e acconciatura raccolta', h: 'aspect-[2/3]' },
-    { src: p('media/portfolio-02.jpg'), category: 'Eventi', alt: 'Trucco occhi per serata di gala', h: 'aspect-square' },
     { src: p('media/portfolio-sposa-03.jpg'), category: 'Sposa', alt: 'Sistemazione del velo su una sposa con chignon', h: 'aspect-[9/16]' },
     { src: p('media/portfolio-sposa-04.jpg'), category: 'Sposa', alt: 'Ritocco del trucco a una sposa in terrazza con vista sulle montagne', h: 'aspect-video' },
     { src: p('media/portfolio-editorial-01.jpg'), category: 'Editorial', alt: 'Modella in abito nero nel verde, trucco e capelli curati', h: 'aspect-[2/3]' },
     { src: p('media/portfolio-editorial-02.jpg'), category: 'Editorial', alt: 'Look vintage anni Cinquanta con foulard a pois, su un’auto d’epoca', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-05.jpg'), category: 'Sposa', alt: 'Trucco sposa in preparazione con vestaglia rosa', h: 'aspect-[9/16]' },
     { src: p('media/portfolio-sposa-06.jpg'), category: 'Sposa', alt: 'Acconciatura con onde morbide laterali e trucco naturale', h: 'aspect-[9/16]' },
-    { src: p('media/portfolio-06.jpg'), category: 'Eventi', alt: 'Acconciatura elegante per cerimonia', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-07.jpg'), category: 'Sposa', alt: 'Chignon intrecciato per una cerimonia in giardino', h: 'aspect-[4/3]' },
     { src: p('media/portfolio-editorial-03.jpg'), category: 'Editorial', alt: 'Shooting vintage con foulard e guanti bianchi', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-editorial-04.jpg'), category: 'Editorial', alt: 'Dietro le quinte di uno shooting: Larisa con la modella', h: 'aspect-[3/4]' },
@@ -133,7 +122,6 @@ export const portfolio = {
     { src: p('media/portfolio-sposa-15.jpg'), category: 'Sposa', alt: 'Sposa sorridente con bouquet di fiori', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-16.jpg'), category: 'Sposa', alt: 'Sposa in vestaglia bianca dopo il trucco', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-10.jpg'), category: 'Sposa', alt: 'Ritratto con occhi illuminati e labbra nude, trucco elegante', h: 'aspect-[3/4]' },
-    { src: p('media/portfolio-09.jpg'), category: 'Eventi', alt: 'Ospite di nozze con make-up elegante', h: 'aspect-[3/4]' },
   ],
 }
 
@@ -169,10 +157,12 @@ export const about = {
   eyebrow: 'Chi sono',
   title: ['Ciao, sono', 'Lary'],
   image: p('media/about.jpg'),
+  // Frase d'apertura, in evidenza sotto il titolo
+  lead: 'Truccatrice e hair stylist professionista, creo look impeccabili e personalizzati che rispecchiano il tuo stile e la tua personalità: per un matrimonio, un’occasione speciale o un glamour di ogni giorno.',
   paragraphs: [
-    'Sono Larisa, per tutti Lary: Make-up Artist e Hair Stylist professionale, con una passione sincera per il mio lavoro. Mi prendo cura del tuo look nel giorno più importante della tua vita, con esperienza e sensibilità estetica.',
-    'Creo un look completamente personalizzato, pensato per valorizzare la tua bellezza naturale con eleganza e armonia: luminoso, raffinato, mai artefatto. Il trucco resiste alle emozioni, agli abbracci e a una giornata intera di fotografie, e resto accanto a te anche durante il servizio fotografico per ogni ritocco. Posso occuparmi anche di mamma, testimoni e damigelle, fino a 5 persone nello stesso giorno.',
-    'Scegliermi significa scegliere attenzione ai dettagli, ascolto e un risultato capace di farti sentire davvero te stessa. Ti raggiungo dove preferisci, a casa o in location. Parlo italiano, inglese e russo e lavoro a Verona, Venezia, sul Lago di Garda, a Milano e sul Lago di Como.',
+    'Sono Larisa, per tutti Lary. Il mio stile è moderno e luminoso, costruito su prodotti ad alte prestazioni e sulle ultime tendenze del settore. La mia firma è una pelle radiosa e un’estetica contemporanea, per chi desidera un servizio di lusso discreto, professionale e impeccabile.',
+    'Il trucco resiste alle emozioni, agli abbracci e a una giornata intera di fotografie, e resto accanto a te anche durante il servizio fotografico per ogni ritocco. Posso occuparmi anche di mamma, testimoni e damigelle, fino a 5 persone nello stesso giorno.',
+    'Scegliermi significa scegliere attenzione ai dettagli, ascolto e un risultato capace di farti sentire davvero te stessa. Parlo fluentemente italiano, russo e inglese. Lavoro sul Lago di Garda, mi sposto a Verona, Venezia, Milano e sul Lago di Como, e sono disponibile per matrimoni in tutta Italia e in Europa.',
   ],
   points: [
     { title: 'Prodotti professionali cruelty-free', text: 'Selezionati per qualità, resa e rispetto della pelle.' },

@@ -15,6 +15,9 @@ export default function About() {
           <Reveal>
             <span className="eyebrow">{about.eyebrow}</span>
             <Heading parts={about.title} em={1} />
+            {about.lead && (
+              <p className="mt-6 max-w-xl font-serif text-2xl leading-snug text-cream md:text-3xl">{about.lead}</p>
+            )}
             {about.paragraphs.map((p) => (
               <p key={p} className="mt-5 max-w-xl text-cream/75">{p}</p>
             ))}

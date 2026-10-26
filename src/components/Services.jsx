@@ -47,9 +47,6 @@ export default function Services() {
                       ▶ {s.video.label}
                     </button>
                   )}
-                  {s.video && !s.video.file && (
-                    <p className="mt-1 text-xs text-cream/45">Si apre il player di Instagram (Meta)</p>
-                  )}
                 </div>
               </article>
             </Reveal>
