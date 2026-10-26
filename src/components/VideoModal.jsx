@@ -7,10 +7,12 @@ import { AnimatePresence, motion } from 'framer-motion'
 // sul pulsante di riproduzione (che è preceduto da una nota visibile sul contenuto di terze parti).
 export default function VideoModal({ video, onClose }) {
   const [local, setLocal] = useState(true)
+  const [wide, setWide] = useState(false)
 
   useEffect(() => {
     if (!video) return
     setLocal(Boolean(video.file))
+    setWide(false)
     const onKey = (e) => e.key === 'Escape' && onClose()
     document.body.style.overflow = 'hidden'
     window.addEventListener('keydown', onKey)
@@ -35,7 +37,10 @@ export default function VideoModal({ video, onClose }) {
         >
           <button onClick={onClose} className="absolute right-5 top-5 text-3xl text-cream hover:text-rose" aria-label="Chiudi">×</button>
 
-          <div onClick={(e) => e.stopPropagation()} className="max-h-[92vh] w-full max-w-[420px] overflow-y-auto rounded-2xl">
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className={`max-h-[92vh] w-full overflow-y-auto rounded-2xl ${wide ? 'max-w-3xl' : 'max-w-[420px]'}`}
+          >
             {local ? (
               <video
                 src={video.file}
@@ -44,8 +49,11 @@ export default function VideoModal({ video, onClose }) {
                 controls
                 autoPlay
                 playsInline
+                onLoadedMetadata={(e) => setWide(e.currentTarget.videoWidth > e.currentTarget.videoHeight)}
                 onError={() => setLocal(false)}
               />
+            ) : !video.embed ? (
+              <p className="glass p-6 text-center text-sm text-cream/75">Video non disponibile al momento.</p>
             ) : (
               <>
                 <iframe

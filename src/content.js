@@ -72,6 +72,12 @@ export const services = {
       title: 'Trucco sposa',
       text: 'Un make-up luminoso e a lunga tenuta, dalla cerimonia all’ultimo ballo.',
       image: p('media/sposa.jpg'),
+      // Video riprodotto direttamente dal sito (file in public/media)
+      video: {
+        label: 'Guarda il video',
+        title: 'Trucco sposa',
+        file: p('media/video-sposa-servizio.mp4'),
+      },
     },
     {
       title: 'Acconciature sposa ed eventi',
@@ -110,14 +116,22 @@ export const portfolio = {
     { src: p('media/portfolio-02.jpg'), category: 'Eventi', alt: 'Trucco occhi per serata di gala', h: 'aspect-square' },
     { src: p('media/portfolio-sposa-03.jpg'), category: 'Sposa', alt: 'Sistemazione del velo su una sposa con chignon', h: 'aspect-[9/16]' },
     { src: p('media/portfolio-sposa-04.jpg'), category: 'Sposa', alt: 'Ritocco del trucco a una sposa in terrazza con vista sulle montagne', h: 'aspect-video' },
-    { src: p('media/portfolio-03.jpg'), category: 'Editorial', alt: 'Look editoriale con labbra intense', h: 'aspect-[4/5]' },
+    { src: p('media/portfolio-editorial-01.jpg'), category: 'Editorial', alt: 'Modella in abito nero nel verde, trucco e capelli curati', h: 'aspect-[2/3]' },
+    { src: p('media/portfolio-editorial-02.jpg'), category: 'Editorial', alt: 'Look vintage anni Cinquanta con foulard a pois, su un’auto d’epoca', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-05.jpg'), category: 'Sposa', alt: 'Trucco sposa in preparazione con vestaglia rosa', h: 'aspect-[9/16]' },
     { src: p('media/portfolio-sposa-06.jpg'), category: 'Sposa', alt: 'Acconciatura con onde morbide laterali e trucco naturale', h: 'aspect-[9/16]' },
     { src: p('media/portfolio-06.jpg'), category: 'Eventi', alt: 'Acconciatura elegante per cerimonia', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-07.jpg'), category: 'Sposa', alt: 'Chignon intrecciato per una cerimonia in giardino', h: 'aspect-[4/3]' },
-    { src: p('media/portfolio-07.jpg'), category: 'Editorial', alt: 'Beauty shooting con pelle luminosa', h: 'aspect-[4/5]' },
+    { src: p('media/portfolio-editorial-03.jpg'), category: 'Editorial', alt: 'Shooting vintage con foulard e guanti bianchi', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-editorial-04.jpg'), category: 'Editorial', alt: 'Dietro le quinte di uno shooting: Larisa con la modella', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-08.jpg'), category: 'Sposa', alt: 'Trucco con pennello per un abito da cerimonia a fiori blu', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-09.jpg'), category: 'Sposa', alt: 'Profilo con onde morbide, pelle luminosa e trucco occhi nei toni caldi', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-11.jpg'), category: 'Sposa', alt: 'Ritratto di sposa con chignon morbido e trucco luminoso', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-12.jpg'), category: 'Sposa', alt: 'Sposa di profilo con ricci morbidi e sorriso', h: 'aspect-[9/16]' },
+    { src: p('media/portfolio-sposa-13.jpg'), category: 'Sposa', alt: 'Sposa con velo e bouquet su un’auto d’epoca', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-14.jpg'), category: 'Sposa', alt: 'Sposa sul lago con velo e abito bianco', h: 'aspect-[2/3]' },
+    { src: p('media/portfolio-sposa-15.jpg'), category: 'Sposa', alt: 'Sposa sorridente con bouquet di fiori', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-16.jpg'), category: 'Sposa', alt: 'Sposa in vestaglia bianca dopo il trucco', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-10.jpg'), category: 'Sposa', alt: 'Ritratto con occhi illuminati e labbra nude, trucco elegante', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-09.jpg'), category: 'Eventi', alt: 'Ospite di nozze con make-up elegante', h: 'aspect-[3/4]' },
   ],
@@ -147,10 +161,7 @@ export const bridal = {
   video: {
     label: 'Guarda il video',
     title: 'Il giorno del sì',
-    page: 'https://www.instagram.com/reel/Dbxh4trMdTE/',
-    embed: 'https://www.instagram.com/reel/Dbxh4trMdTE/embed',
-    // Per riprodurlo direttamente dal sito (senza Instagram) aggiungi il file MP4 in public/media
-    // e decommenta la riga: file: p('media/video-sposa.mp4'),
+    file: p('media/video-sposa.mp4'),
   },
 }
 
