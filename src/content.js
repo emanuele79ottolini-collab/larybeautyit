@@ -122,6 +122,16 @@ export const portfolio = {
     { src: p('media/portfolio-sposa-15.jpg'), category: 'Sposa', alt: 'Sposa sorridente con bouquet di fiori', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-16.jpg'), category: 'Sposa', alt: 'Sposa in vestaglia bianca dopo il trucco', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-10.jpg'), category: 'Sposa', alt: 'Ritratto con occhi illuminati e labbra nude, trucco elegante', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-17.jpg'), category: 'Sposa', alt: 'Sposa con labbra rosso intenso e onde morbide raccolte di lato', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-editorial-05.jpg'), category: 'Editorial', alt: 'Ritratto con onde morbide e trucco luminoso in una sala d’epoca', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-18.jpg'), category: 'Sposa', alt: 'Sposa con velo, bouquet di rose bianche e trucco naturale', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-19.jpg'), category: 'Sposa', alt: 'Trucco naturale e capelli sciolti con onde leggere', h: 'aspect-[9/16]' },
+    { src: p('media/portfolio-sposa-21.jpg'), category: 'Sposa', alt: 'Chignon morbido e trucco fresco prima della cerimonia', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-22.jpg'), category: 'Sposa', alt: 'Onde morbide ramate, dettaglio dell’acconciatura di spalle', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-editorial-06.jpg'), category: 'Editorial', alt: 'Raccolto morbido e spettinato con trucco caldo, di profilo', h: 'aspect-[3/4]' },
+    { src: p('media/portfolio-sposa-20.jpg'), category: 'Sposa', alt: 'Capelli lunghi scuri con onde e trucco occhi definito', h: 'aspect-[9/16]' },
+    { src: p('media/portfolio-sposa-23.jpg'), category: 'Sposa', alt: 'Coda alta lucida e trucco occhi con eyeliner', h: 'aspect-[9/16]' },
+    { src: p('media/portfolio-sposa-24.jpg'), category: 'Sposa', alt: 'Sposa con chignon basso liscio e labbra rosse', h: 'aspect-[9/16]' },
   ],
 }
 
