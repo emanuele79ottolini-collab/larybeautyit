@@ -121,7 +121,6 @@ export const portfolio = {
     { src: p('media/portfolio-sposa-14.jpg'), category: 'Sposa', alt: 'Sposa sul lago con velo e abito bianco', h: 'aspect-[2/3]' },
     { src: p('media/portfolio-sposa-15.jpg'), category: 'Sposa', alt: 'Sposa sorridente con bouquet di fiori', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-16.jpg'), category: 'Sposa', alt: 'Sposa in vestaglia bianca dopo il trucco', h: 'aspect-[3/4]' },
-    { src: p('media/portfolio-sposa-10.jpg'), category: 'Sposa', alt: 'Ritratto con occhi illuminati e labbra nude, trucco elegante', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-17.jpg'), category: 'Sposa', alt: 'Sposa con labbra rosso intenso e onde morbide raccolte di lato', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-editorial-05.jpg'), category: 'Editorial', alt: 'Ritratto con onde morbide e trucco luminoso in una sala d’epoca', h: 'aspect-[3/4]' },
     { src: p('media/portfolio-sposa-18.jpg'), category: 'Sposa', alt: 'Sposa con velo, bouquet di rose bianche e trucco naturale', h: 'aspect-[3/4]' },
