@@ -154,7 +154,7 @@ export const pages = {
     sections: [
       {
         h: '1. Oggetto',
-        p: ['Il sito presenta i servizi di make-up e hair styling per spose, eventi e shooting, e permette di richiedere una consulenza. La navigazione è gratuita.'],
+        p: ['Il sito presenta i servizi di make-up e hair styling per spose e shooting, e permette di richiedere una consulenza. La navigazione è gratuita.'],
       },
       {
         h: '2. Richieste di consulenza e prenotazioni',

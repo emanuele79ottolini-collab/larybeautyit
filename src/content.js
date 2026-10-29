@@ -13,7 +13,7 @@ export const site = {
   languages: 'Italiano · English · Русский',
   area: 'Verona, Venezia, Lago di Garda, Milano e Lago di Como',
   description:
-    'Makeup & Hair Artist a Verona, Venezia, Lago di Garda e Milano: trucco e acconciature per spose, eventi e shooting.',
+    'Makeup & Hair Artist a Verona, Venezia, Lago di Garda e Milano: trucco e acconciature per spose e shooting.',
   url: 'https://www.example.com', // <- sostituisci con il tuo dominio
 }
 
@@ -80,7 +80,7 @@ export const services = {
       },
     },
     {
-      title: 'Acconciature sposa ed eventi',
+      title: 'Acconciature sposa',
       text: 'Raccolti, onde morbide e pieghe studiate in armonia con abito e viso.',
       image: p('media/eventi.jpg'),
     },
@@ -100,7 +100,7 @@ export const services = {
 export const portfolio = {
   eyebrow: 'Portfolio',
   title: ['I miei', 'lavori'],
-  filters: ['Tutti', 'Sposa', 'Editorial'], // aggiungere 'Eventi' quando ci sono le foto
+  filters: ['Tutti', 'Sposa', 'Editorial'],
   items: [
     { src: p('media/portfolio-sposa-01.jpg'), category: 'Sposa', alt: 'Sposa sorridente sul lago con trucco luminoso e chignon morbido' },
     { src: p('media/portfolio-sposa-17.jpg'), category: 'Sposa', alt: 'Sposa con labbra rosso intenso e onde morbide raccolte di lato' },
@@ -201,7 +201,7 @@ export const contact = {
   eyebrow: 'Contatti',
   title: ['Prenota la tua', 'consulenza'],
   text: 'Contattami senza impegno: avrai tutto il tempo per capire se sono la professionista giusta per te. Raccontami la tua data e le tue idee e ti rispondo con una proposta su misura.',
-  serviceOptions: ['Trucco sposa', 'Acconciature sposa ed eventi', 'Trucco per shooting e video', 'Corsi di self make-up'],
+  serviceOptions: ['Trucco sposa', 'Acconciature sposa', 'Trucco per shooting e video', 'Corsi di self make-up'],
   whatsappCta: 'Scrivimi su WhatsApp',
 }
 
