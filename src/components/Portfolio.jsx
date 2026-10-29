@@ -4,11 +4,15 @@ import { portfolio } from '../content'
 import Media from './Media'
 import Reveal, { Heading } from './Reveal'
 
+const PAGE = 12 // foto mostrate all'inizio e a ogni "Vedi altre foto"
+
 export default function Portfolio() {
   const [filter, setFilter] = useState('Tutti')
   const [current, setCurrent] = useState(null)
+  const [shown, setShown] = useState(PAGE)
 
   const items = portfolio.items.filter((p) => filter === 'Tutti' || p.category === filter)
+  const visible = items.slice(0, shown)
 
   const close = useCallback(() => setCurrent(null), [])
   const step = useCallback(
@@ -45,7 +49,7 @@ export default function Portfolio() {
               key={f}
               role="tab"
               aria-selected={filter === f}
-              onClick={() => { setFilter(f); setCurrent(null) }}
+              onClick={() => { setFilter(f); setCurrent(null); setShown(PAGE) }}
               className={`rounded-full border px-5 py-2 text-sm transition ${
                 filter === f ? 'border-rose bg-rose text-ink' : 'border-cream/25 hover:border-rose hover:text-rose'
               }`}
@@ -55,9 +59,9 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <motion.div layout className="mt-10 columns-1 gap-4 sm:columns-2 lg:columns-3">
+        <motion.div layout className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
           <AnimatePresence mode="popLayout">
-            {items.map((p, i) => (
+            {visible.map((p, i) => (
               <motion.button
                 layout
                 key={p.src}
@@ -66,14 +70,25 @@ export default function Portfolio() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4 }}
                 onClick={() => setCurrent(i)}
-                className="grain group mb-4 block w-full overflow-hidden rounded-2xl"
+                className="grain group block w-full overflow-hidden rounded-2xl"
                 aria-label={`Apri: ${p.alt}`}
               >
-                <Media src={p.src} alt={p.alt} className={`w-full ${p.h}`} imgClassName="transition duration-700 group-hover:scale-105" />
+                <Media src={p.src} alt={p.alt} className="aspect-[4/5] w-full" imgClassName="object-[50%_22%] transition duration-700 group-hover:scale-105" />
               </motion.button>
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {items.length > PAGE && (
+          <div className="mt-10 flex flex-col items-center gap-3">
+            <p className="text-sm text-cream/60">{visible.length} di {items.length} foto</p>
+            {visible.length < items.length ? (
+              <button type="button" onClick={() => setShown((n) => n + PAGE)} className="btn btn-outline">Vedi altre foto</button>
+            ) : (
+              <button type="button" onClick={() => setShown(PAGE)} className="btn btn-outline">Mostra meno</button>
+            )}
+          </div>
+        )}
       </div>
 
       <AnimatePresence>
